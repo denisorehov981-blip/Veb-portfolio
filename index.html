@@ -2,10 +2,144 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб-портфоліо вчителя інформатики</title>
+    <style>
+        /* Загальні налаштування сторінки */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Навігаційне меню */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #34495e;
+        }
+        nav a.active {
+            background-color: #1abc9c;
+        }
+
+        /* Шапка сайту (Header) */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #1abc9c);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        /* Основний контейнер для тексту */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        /* Секція "Про мене" */
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .about-text {
+            flex: 2;
+        }
+        .about-photo {
+            flex: 1;
+            background-color: #e0e0e0;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            border: 3px solid #1abc9c;
+        }
+
+        /* Підвал сайту (Footer) */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Вітаю на моєму веб-портфоліо!</h1>
-    <p>Цей сайт перебуває в процесі розробки. Скоро тут з'являться методичні матеріали та розробки уроків.</p>
+
+    <!-- Навігаційне меню сайту відповідно до ТЗ -->
+    <nav>
+        <a href="index.html" class="active">Головна</a>
+        <a href="#">Про мене</a>
+        <a href="#">Методична робота</a>
+        <a href="#">Контакти</a>
+    </nav>
+
+    <!-- Шапка сайту з назвою та слоганом -->
+    <header>
+        <h1>Веб-портфоліо вчителя інформатики</h1>
+        <p>«Інформатика — це простір для творчості, логіки та інновацій»</p>
+    </header>
+
+    <!-- Основний контент сторінки -->
+    <div class="container">
+        <h2>Вітаю на моєму професійному сайті!</h2>
+        
+        <div class="about-section">
+            <div class="about-text">
+                <p><strong>Радий вітати вас на сторінках мого вебресурсу!</strong></p>
+                <p>Цей сайт створено як індивідуальне практичне завдання для демонстрації методичних матеріалів, розробок інноваційних уроків інформатики, презентацій та особистих педагогічних здобутків.</p>
+                <p>Сучасний учитель інформатики — це не просто викладач предмету, а провідник у світ цифрових технологій, який допомагає учням розвивати критичне мислення, алгоритмічну логіку та медіаграмотність.</p>
+            </div>
+            <!-- Місце для майбутнього фото -->
+            <div class="about-photo">
+                [ Місце для<br>вашого фото ]
+            </div>
+        </div>
+    </div>
+
+    <!-- Підвал сайту -->
+    <footer>
+        <p>&copy; 2026 Веб-портфоліо вчителя інформатики. Усі права захищено.</p>
+    </footer>
+
 </body>
 </html>
